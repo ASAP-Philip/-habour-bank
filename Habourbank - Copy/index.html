@@ -305,41 +305,23 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
 
 <style>
     .shower{
-        display: none;
+        display: none;  
         text-align: center;
     }
     .cast{
         display: flex;
     }
-	.gunna{
-            background-color:  #293589;
-            padding: 1.2rem;
-        }
- 
     @media (max-width:768px) {
         .gunna{
-            background-color:  #293589;
+            
             padding: 1.2rem;
         }
         .user_name{
             background-color: white;
-	    margin-bottom: 10px;
-	    padding:8px;
             border: 1px solid black;
             outline: none;
 
         }
-	.loginButton{
-	  background-color:#293589;
-	margin-top:2cm;
-            color: white;
-            border: 0px solid;
-		outline:none;
-            padding: 15px 22px;
-	}	
-	.bgs{
-	background-color: #3b82ca;
-	}
     }
 </style>
 
@@ -351,8 +333,8 @@ const usertid = document.getElementById("usertid");
 const usertpassword = document.getElementById("usertpassword");
 const logintn = document.getElementById("buttonsContinue");
 
-let id = "petersg@263";
-let password = "PetersGargas263";
+let id = "Linda141@";
+let password = "Brooks01";
 let errors = document.getElementById("errors");
 
 logintn.addEventListener("click", () => {
@@ -360,8 +342,6 @@ logintn.addEventListener("click", () => {
     const userInputId = usertid.value.trim();
     const userInputPassword = usertpassword.value.trim();
 
-
-     
     // Check credentials
     if (userInputId === id && userInputPassword === password) {
         window.location.href = "./dashboard.html";
